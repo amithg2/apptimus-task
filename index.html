@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Apptimus Task</title>
+  </head>
+
+  <body onload="showBanners()">
+    <h1>Apptimus Task</h1>
+    <h4>By Amit Hagag</h4>
+    <form id="form">
+      <input
+        type="url"
+        placeholder="Add Image"
+        name="imageUrl"
+        id="imageUrl"
+        required
+      />
+
+      <input
+        type="url"
+        placeholder=" Add Url"
+        name="redirectUrl"
+        id="redirectUrl"
+        required
+      />
+
+      <button type="submit" id="submitForm">Submit</button>
+    </form>
+    <div class="localBtns">
+      <button type="button" id="save">Save</button>
+      <button type="button" id="clear">Clear</button>
+    </div>
+    <div id="banners-list"></div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
